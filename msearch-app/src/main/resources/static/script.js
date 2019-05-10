@@ -11,6 +11,7 @@ $(document).ready(function() {
 				text : text
 			}, function(response) {
 				if (response != null) {
+					$("#infoLbl").text('Total Jobs Found: '+response.length);
 					tBody.empty();
 					$.each(response, function(key, value) {
 						var row = $("<tr><td class=\"smallTd\"></td><td class=\"bigTd\"></td><td class=\"midTd\"></td></tr>");
@@ -21,6 +22,7 @@ $(document).ready(function() {
 					});//Loop ends
 				} else {
 					tBody.empty();
+					$("#infoLbl").text('');
 				}
 			});
 		});
