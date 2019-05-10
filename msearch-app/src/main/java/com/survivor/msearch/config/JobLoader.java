@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
@@ -42,7 +41,12 @@ public class JobLoader {
 	@Autowired
 	JobRepository repo;
 
-	@Scheduled(fixedRate = 4356478956L, initialDelay = 500)
+	/**
+	 * Already some jobs are parsed from JPMorgan. Those jobs are stored on elastic
+	 * embedded data store. Uncomment the @Scheduled annotation if more jobs are
+	 * required to store.
+	 */
+	// @Scheduled(fixedRate = 4356478956L, initialDelay = 500)
 	public void loadAll() {
 
 		operations.putMapping(Job.class);
