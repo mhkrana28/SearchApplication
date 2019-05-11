@@ -1,3 +1,9 @@
+body {
+	font-family: sans-serif;
+	background-color: rgba(0,0,10,.9);
+	color: white;
+}
+
 table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
@@ -25,28 +31,29 @@ table {
 
 #infoLbl {
 	margin-left: 20px;
-	color: rgba(126,32,4,.5);
+	color: yellow;
 	font-size: 16px;
 	font-family: monospace;
 }
 
 th {
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0,0,10,.9);
 	padding: 7px;
+	color: aqua;
 }
 
 tr {
 	margin: 1px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
 	background-color: #dddddd;
+	color: rgba(0,0,10,.9);
 }
 
 td {
 	text-align: center;
 	padding: 5px;
-	color: green;
 }
 
 .smallTd {
