@@ -1,13 +1,20 @@
 body {
 	font-family: sans-serif;
-	background-color: rgba(0,0,10,.9);
+	background-color: rgba(0,0,10,.85);
 	color: white;
+}
+
+#logo {
+	height: 80px;
+	width: 	px;
+	margin-right: 10px;
+	float: left;
 }
 
 table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
-	width: 100%;
+	width: 100%;	
 }
 
 #searchDiv {
@@ -22,6 +29,7 @@ table {
 	border: 2px solid rgba(0, 30, 12, .4);
 	border-radius: 6px;
 	text-align: center;
+	margin-top: 25px;
 }
 
 #searchBtn {
